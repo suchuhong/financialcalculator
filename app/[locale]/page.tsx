@@ -27,9 +27,10 @@ export async function generateMetadata(
     openGraph: {
       title: t('og.title'),
       description: t('og.description'),
-      type: t('og.type'),
+      // ✅ CORRECTED LINE: Add a type assertion
+      type: t('og.type') as 'website',
     },
-  }
+  };
 }
 
 export default async function HomePage() {

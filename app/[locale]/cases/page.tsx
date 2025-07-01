@@ -217,7 +217,7 @@ export default function CasesPage() {
                         )}
 
                         {/* 优缺点显示 */}
-                        {scenario.advantagesKeys && (
+                        {'advantagesKeys' in scenario && scenario.advantagesKeys && (
                           <div className="space-y-2">
                             <p className="text-sm font-medium text-green-700">{t('cases.advantages')}：</p>
                             <ul className="text-sm text-green-600 space-y-1">
@@ -228,7 +228,7 @@ export default function CasesPage() {
                           </div>
                         )}
 
-                        {scenario.disadvantagesKeys && (
+                        {'disadvantagesKeys' in scenario && scenario.disadvantagesKeys && (
                           <div className="space-y-2">
                             <p className="text-sm font-medium text-red-700">{t('cases.disadvantages')}：</p>
                             <ul className="text-sm text-red-600 space-y-1">
@@ -239,15 +239,15 @@ export default function CasesPage() {
                           </div>
                         )}
 
-                        {scenario.analysisKey && (
+                        {'analysisKey' in scenario && scenario.analysisKey && (
                           <div className="bg-gray-50 p-3 rounded text-sm text-gray-700">{t(scenario.analysisKey)}</div>
                         )}
 
-                        {scenario.expectedReturnKey && (
+                        {'expectedReturnKey' in scenario && scenario.expectedReturnKey && (
                           <div className="bg-blue-50 p-3 rounded text-sm text-blue-700">{t(scenario.expectedReturnKey)}</div>
                         )}
                         
-                        {scenario.presentValueKey && (
+                        {'presentValueKey' in scenario && scenario.presentValueKey && (
                           <div className="bg-blue-50 p-3 rounded text-sm text-blue-700">{t(scenario.presentValueKey)}</div>
                         )}
                       </div>

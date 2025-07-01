@@ -9,53 +9,53 @@ import { Calculator, Info, TrendingDown } from "lucide-react"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 
 // 1. 定义 props 的类型，用于接收所有翻译文本
-// type BreakevenCalculatorTranslations = {
-//   formCard: {
-//     title: string;
-//     description: string;
-//     buyPriceLabel: string;
-//     buyPricePlaceholder: string;
-//     currentPriceLabel: string;
-//     currentPricePlaceholder: string;
-//     holdingYearsLabel: string;
-//     holdingYearsPlaceholder: string;
-//     holdingYearsDescription: string;
-//     expectedReturnLabel: string;
-//     expectedReturnDescription: string;
-//     buttonText: string;
-//   };
-//   results: {
-//     lossAnalysisTitle: string;
-//     currentLoss: string;
-//     requiredGain: string;
-//     trueBreakevenAnalysisTitle: string;
-//     trueBreakevenPrice: string;
-//     opportunityCost: string;
-//     opportunityCostNote: string;
-//   };
-//   infoCard: {
-//     title: string;
-//     description: string;
-//     formulaTitle: string;
-//     formula: string;
-//     examples: string[];
-//   };
-//   alert: {
-//     title: string;
-//     description: string;
-//   };
-//   caseStudyCard: {
-//     title: string;
-//     deepLossCaseTitle: string;
-//     deepLossCaseDescription: string;
-//     shortTermCaseTitle: string;
-//     shortTermCaseDescription: string;
-//   };
-// };
+type BreakevenCalculatorTranslations = {
+  formCard: {
+    title: string;
+    description: string;
+    buyPriceLabel: string;
+    buyPricePlaceholder: string;
+    currentPriceLabel: string;
+    currentPricePlaceholder: string;
+    holdingYearsLabel: string;
+    holdingYearsPlaceholder: string;
+    holdingYearsDescription: string;
+    expectedReturnLabel: string;
+    expectedReturnDescription: string;
+    buttonText: string;
+  };
+  results: {
+    lossAnalysisTitle: string;
+    currentLoss: string;
+    requiredGain: string;
+    trueBreakevenAnalysisTitle: string;
+    trueBreakevenPrice: string;
+    opportunityCost: string;
+    opportunityCostNote: string;
+  };
+  infoCard: {
+    title: string;
+    description: string;
+    formulaTitle: string;
+    formula: string;
+    examples: string[];
+  };
+  alert: {
+    title: string;
+    description: string;
+  };
+  caseStudyCard: {
+    title: string;
+    deepLossCaseTitle: string;
+    deepLossCaseDescription: string;
+    shortTermCaseTitle: string;
+    shortTermCaseDescription: string;
+  };
+};
 
 // 2. 组件接收 translations prop
 
-export default function BreakevenCalculatorClient({ translations, currencySymbol }: { translations: YourTranslationsType, currencySymbol: string }) {
+export default function BreakevenCalculatorClient({ translations, currencySymbol }: { translations: BreakevenCalculatorTranslations, currencySymbol: string }) {
   const [buyPrice, setBuyPrice] = useState("")
   const [currentPrice, setCurrentPrice] = useState("")
   const [holdingYears, setHoldingYears] = useState("")
