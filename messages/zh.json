@@ -424,5 +424,380 @@
         "3": "《估值：难点、解决方案及相关案例》- 达莫达兰"
       }
     }
+  },
+  "ToolsGrid": {
+    "title": "专业金融计算工具",
+    "subtitle": "基于严谨的金融理论，为您提供准确可靠的计算结果",
+    "buttonText": "立即使用",
+    "tools": {
+      "presentValue": {
+        "title": "现值计算器",
+        "description": "计算未来现金流的现在价值，评估投资项目的真实价值"
+      },
+      "futureValue": {
+        "title": "未来价值计算器",
+        "description": "预测当前投资在未来某个时间点的价值"
+      },
+      "irr": {
+        "title": "IRR计算器",
+        "description": "计算内含回报率，准确评估投资项目的真实收益率"
+      },
+      "loan": {
+        "title": "贷款利率计算器",
+        "description": "计算真实年化利率，避免被虚假利率误导"
+      },
+      "breakeven": {
+        "title": "投资回本计算器",
+        "description": "计算股票下跌后需要多少涨幅才能回本"
+      },
+      "opportunityCost": {
+        "title": "机会成本计算器",
+        "description": "评估不同投资选择的机会成本"
+      }
+    }
+  },
+  "KnowledgePreview": {
+    "title": "核心金融概念",
+    "subtitle": "深入浅出，用实际案例帮您理解复杂的金融概念",
+    "exampleLabel": "实例：",
+    "buttonText": "查看完整知识库",
+    "concepts": {
+      "timeValue": {
+        "title": "金钱的时间价值",
+        "description": "今天的1块钱比明天的1块钱更有价值，这不是因为通胀，而是因为今天的钱可以赚取利息。",
+        "example": "选择题：今天给你10万元，还是一年后给你11万元？"
+      },
+      "presentFutureValue": {
+        "title": "现值与未来价值",
+        "description": "现值是未来某笔钱在今天的价值，未来价值是今天的钱在未来某个时间点的价值。",
+        "example": "一年后的100万元，在5%利率下，今天的价值是95.2万元。"
+      },
+      "irr": {
+        "title": "内含回报率(IRR)",
+        "description": "IRR充分考虑了现金流入和流出的时间节点，告诉我们投资的真实回报率。",
+        "example": "同样投入50万，不同的现金流时间安排会产生不同的IRR。"
+      },
+      "misconceptions": {
+        "title": "常见金融误区",
+        "description": "股票涨回买入价不等于解套，贷款名义利率可能远低于真实利率。",
+        "example": "股票下跌30%，需要回涨42.86%才能回本。"
+      }
+    }
+  },
+  "CaseStudies": {
+    "title": "实战案例分析",
+    "subtitle": "通过真实案例，看金融知识如何指导实际决策",
+    "insightLabel": "关键洞察：",
+    "cases": {
+      "rideShare": {
+        "title": "网约车投资方案对比",
+        "description": "同样投入50万元，三种不同的现金流安排，哪种方案更优？",
+        "insight": "早期收回的现金发挥了金钱的时间价值，方案二虽然总收入相同，但IRR最高。",
+        "scenarios": [
+          { "name": "方案一", "irr": "IRR: 5.2%", "description": "稳定收入，每年10万" },
+          { "name": "方案二", "irr": "IRR: 7.5%", "description": "前期高收入，后期低收入" },
+          { "name": "方案三", "irr": "IRR: 5.9%", "description": "前期更高收入，总收入更少但IRR更高" }
+        ]
+      },
+      "lottery": {
+        "title": "彩票中奖选择",
+        "description": "中奖2亿美元：立即领取9000万还是30年分期领取2亿？",
+        "insight": "多数人选择一次性领取是正确的，因为可以立即投资获得更高回报。",
+        "scenarios": [
+          { "name": "一次性领取", "irr": "回报率约 4-5%", "description": "立即获得9000万美元" },
+          { "name": "分期付款", "irr": "回报率约 2-3%", "description": "30年总共2亿美元" }
+        ]
+      },
+      "rentDeposit": {
+        "title": "房租押金的隐性成本",
+        "description": "租房时不应只看租金高低，押金的资金占用也存在机会成本。",
+        "insight": "押金虽然会退回，但资金占用期间的机会成本不可忽视。",
+        "scenarios": [
+          { "name": "方案A", "irr": "月租5000，押1万", "description": "看似便宜的选择" },
+          { "name": "方案B", "irr": "月租5200，押5000", "description": "考虑机会成本后可能更优" }
+        ]
+      }
+    }
+  },
+  "BreakevenCalculator": {
+    "title": "投资回本计算器",
+    "subtitle": "计算股票下跌后需要多少涨幅才能真正回本",
+    "formCard": {
+      "title": "投资参数",
+      "description": "输入投资信息计算回本要求",
+      "buyPriceLabel": "买入价格 ({currency})",
+      "buyPricePlaceholder": "例如：100",
+      "currentPriceLabel": "当前价格 ({currency})",
+      "currentPricePlaceholder": "例如：70",
+      "holdingYearsLabel": "持有年数 (可选)",
+      "holdingYearsPlaceholder": "例如：3",
+      "holdingYearsDescription": "用于计算机会成本",
+      "expectedReturnLabel": "预期年化收益率 (%)",
+      "expectedReturnDescription": "用于计算机会成本，默认3%",
+      "buttonText": "计算回本要求"
+    },
+    "results": {
+      "lossAnalysisTitle": "亏损分析",
+      "currentLoss": "当前亏损: [[lossPercentage]]%",
+      "requiredGain": "需要上涨: [[requiredGain]]% 才能回到买入价",
+      "trueBreakevenAnalysisTitle": "真实回本分析",
+      "trueBreakevenPrice": "真实回本价: [[currency]][[price]]",
+      "opportunityCost": "机会成本: [[currency]][[cost]]",
+      "opportunityCostNote": "考虑[[years]]的时间价值和机会成本"
+    },
+    "infoCard": {
+      "title": "回本的数学真相",
+      "description": "股票下跌后，需要更大幅度的上涨才能回本。这是因为计算基数发生了变化。",
+      "formulaTitle": "回本公式：",
+      "formula": "回本涨幅 = (买入价 - 当前价) / 当前价",
+      "examples": [
+        "• 下跌10% → 需上涨11.11%",
+        "• 下跌30% → 需上涨42.86%",
+        "• 下跌50% → 需上涨100%",
+        "• 下跌70% → 需上涨233%"
+      ]
+    },
+    "alert": {
+      "title": "机会成本提醒：",
+      "description": "即使股票涨回买入价，也不代表真正解套。因为资金被占用期间，存在时间价值和机会成本。"
+    },
+    "caseStudyCard": {
+      "title": "实际案例",
+      "deepLossCaseTitle": "案例：深度套牢",
+      "deepLossCaseDescription": "10年前10万元买的股票，今天涨回10万元。看似回本，但考虑3%年化收益，真实回本需要13.44万元。",
+      "shortTermCaseTitle": "案例：短期波动",
+      "shortTermCaseDescription": "股票从100元跌到70元（-30%），需要涨到142.86元（+42.86%）才能回到买入价。"
+    }
+  },
+  "FutureValueCalculator": {
+    "title": "未来价值计算器",
+    "subtitle": "预测当前投资在未来某个时间点的价值",
+    "formCard": {
+      "title": "计算参数",
+      "description": "输入相关参数计算未来价值",
+      "presentValueLabel": "现在价值 ({currency})",
+      "presentValuePlaceholder": "例如：100000",
+      "interestRateLabel": "年利率 (%)",
+      "interestRatePlaceholder": "例如：8",
+      "yearsLabel": "投资年数",
+      "yearsPlaceholder": "例如：10",
+      "compoundFrequencyLabel": "复利频率",
+      "compoundFrequencyOptions": [
+        { "value": "1", "label": "年复利" },
+        { "value": "2", "label": "半年复利" },
+        { "value": "4", "label": "季度复利" },
+        { "value": "12", "label": "月复利" },
+        { "value": "365", "label": "日复利" }
+      ],
+      "buttonText": "计算未来价值"
+    },
+    "results": {
+      "title": "计算结果",
+      "summary": "在{rate}%年利率下，{years}年后的价值",
+      "totalInterest": "总收益："
+    },
+    "infoCard": {
+      "title": "什么是未来价值？",
+      "description": "未来价值（Future Value）是今天的金钱在未来某个时间点的价值。它考虑了复利效应，即利息产生利息的现象。",
+      "formulaTitle": "复利计算公式：",
+      "formula": "FV = PV × (1 + r/n)^(n×t)",
+      "formulaTerms": [
+        "FV = 未来价值",
+        "PV = 现在价值",
+        "r = 年利率",
+        "n = 每年复利次数",
+        "t = 年数"
+      ]
+    },
+    "alert": {
+      "title": "复利的威力：",
+      "description": "爱因斯坦称复利为“世界第八大奇迹”。时间越长，复利效应越明显。即使是小额投资，长期坚持也能产生惊人的回报。"
+    },
+    "caseStudyCard": {
+      "title": "投资案例",
+      "longTermCaseTitle": "案例：长期投资",
+      "longTermCaseDescription": "投资10万元，年化收益8%，10年后价值约21.6万元，收益翻倍体现了复利的威力。",
+      "frequencyCaseTitle": "案例：复利频率影响",
+      "frequencyCaseDescription": "同样条件下，月复利比年复利多产生约3000元收益，说明复利频率的重要性。"
+    }
+  },
+  "IRRCalculator": {
+    "title": "IRR计算器",
+    "subtitle": "计算内含回报率，准确评估投资项目的真实收益率",
+    "formCard": {
+      "title": "现金流设置",
+      "description": "输入初始投资和各年现金流",
+      "initialInvestmentLabel": "初始投资 ({currency})",
+      "initialInvestmentPlaceholder": "例如：500000",
+      "cashFlowsLabel": "各年现金流",
+      "addYearButton": "添加年份",
+      "yearLabel": "第{year}年",
+      "cashFlowPlaceholder": "现金流入",
+      "calculateButton": "计算IRR"
+    },
+    "results": {
+      "title": "计算结果",
+      "description": "该投资项目的内含回报率"
+    },
+    "infoCard": {
+      "title": "什么是IRR？",
+      "description": "内含回报率（IRR）是使投资项目净现值为零的贴现率，它充分考虑了现金流入和流出的时间节点。",
+      "advantagesTitle": "IRR的优势：",
+      "advantagesList": [
+        "• 考虑资金的时间价值",
+        "• 反映真实的投资回报率",
+        "• 便于不同项目间比较",
+        "• 考虑现金流的时间分布"
+      ]
+    },
+    "alert": {
+      "title": "决策准则：",
+      "description": "当IRR大于资金成本或要求回报率时，项目值得投资。IRR越高，项目的投资价值越大。"
+    },
+    "caseStudyCard": {
+      "title": "网约车投资案例",
+      "scenario1Title": "方案一（稳定收入）",
+      "scenario1Description": "投入50万，5年每年收入10万，第5年卖车9万。IRR: 5.2%",
+      "scenario2Title": "方案二（前期高收入）",
+      "scenario2Description": "投入50万，前2年每年20万，后3年每年5万，第5年卖车9万。IRR: 7.5%（最优）",
+      "insightTitle": "关键洞察",
+      "insightDescription": "早期收回的现金发挥了金钱的时间价值，即使总收入相同，IRR也会不同。"
+    }
+  },
+  "LoanCalculator": {
+    "title": "贷款利率计算器",
+    "subtitle": "计算真实年化利率，避免被虚假利率误导",
+    "formCard": {
+      "title": "贷款参数",
+      "description": "输入贷款信息计算真实利率",
+      "loanAmountLabel": "贷款金额 ({currency})",
+      "loanAmountPlaceholder": "例如：100000",
+      "nominalRateLabel": "名义年利率 (%)",
+      "nominalRatePlaceholder": "例如：5",
+      "loanTermLabel": "贷款期限 (年)",
+      "loanTermPlaceholder": "例如：2",
+      "monthlyPaymentLabel": "月还款额 ({currency}) - 可选",
+      "monthlyPaymentPlaceholder": "如果已知月供，输入此项计算实际利率",
+      "monthlyPaymentDescription": "留空则按标准等额本息计算，填写则反推实际利率",
+      "calculateButton": "计算"
+    },
+    "results": {
+      "title": "计算结果",
+      "actualRate": "实际年化利率: {rate}%",
+      "monthlyPayment": "月供: {currency}{payment}",
+      "totalPayment": "总还款: {currency}{payment}",
+      "totalInterest": "总利息: {currency}{interest}",
+      "rateMultiplierWarning": "⚠️ 实际利率是名义利率的 {multiplier} 倍"
+    },
+    "infoCard": {
+      "title": "贷款利率陷阱",
+      "description": "许多非正规金融机构使用“平息法”计算利息，导致实际利率远高于名义利率，因为每月还本金后，您实际占用的资金在减少。",
+      "comparisonTitle": "平息法 vs 等额本息法：",
+      "comparisonList": [
+        { "term": "平息法", "desc": "利息按初始本金计算" },
+        { "term": "等额本息法", "desc": "利息按剩余本金计算" },
+        { "term": "重要提示", "desc": "平息法的实际利率约为名义利率的1.8倍左右" }
+      ]
+    },
+    "alert": {
+      "title": "风险提示：",
+      "description": "融资租赁、小额贷款和民间借贷常用“平息法”。正规银行使用等额本息或等额本金法，利率计算更透明合理。"
+    },
+    "caseStudyCard": {
+      "title": "案例对比",
+      "flatRateCaseTitle": "“平息法”陷阱",
+      "flatRateCaseDescription": "贷款10万元，名义年利率5%，2年期。若月供为4583元，则实际年化利率高达9.3%！",
+      "amortizedCaseTitle": "标准“等额本息”",
+      "amortizedCaseDescription": "同样条件下，正规银行等额本息月供约4387元，实际年化利率就是5%。"
+    }
+  },
+  "OpportunityCostCalculator": {
+    "title": "机会成本计算器",
+    "subtitle": "评估不同投资选择的机会成本，找出最优方案",
+    "formCard": {
+      "title": "投资方案对比",
+      "addButton": "添加方案",
+      "description": "输入不同投资方案进行对比",
+      "optionNamePlaceholder": "方案名称",
+      "amountLabel": "投资金额",
+      "amountPlaceholder": "金额",
+      "returnLabel": "年化收益率(%)",
+      "returnPlaceholder": "收益率",
+      "yearsLabel": "投资年限",
+      "yearsPlaceholder": "年数",
+      "calculateButton": "计算机会成本",
+      "defaultOptionName": "方案{letter}"
+    },
+    "results": {
+      "bestOptionTitle": "最优方案",
+      "analysisTitle": "机会成本分析",
+      "futureValueLabel": "未来价值",
+      "opportunityCostLabel": "机会成本",
+      "bestChoiceLabel": "最优选择"
+    },
+    "infoCard": {
+      "title": "什么是机会成本？",
+      "description": "机会成本是指为了选择某个方案而放弃的其他方案中所能获得的最大利益。在投资决策中，机会成本帮助我们找到最优选择。",
+      "applicationsTitle": "机会成本的应用：",
+      "applicationsList": [
+        "• 投资项目选择",
+        "• 资金配置决策",
+        "• 职业发展选择",
+        "• 时间分配决策"
+      ]
+    },
+    "alert": {
+      "title": "决策原则：",
+      "description": "选择机会成本最低的方案，即选择能带来最大收益的方案。机会成本为零的方案就是最优选择。"
+    },
+    "caseStudyCard": {
+      "title": "实际应用案例",
+      "rentCaseTitle": "案例：租房押金",
+      "rentCaseDescription": "房租5000元押金1万 vs 房租5200元押金5000元。考虑押金的机会成本，后者可能更优。",
+      "investmentCaseTitle": "案例：投资选择",
+      "investmentCaseDescription": "股票投资8%收益 vs 债券投资5%收益。选择股票的机会成本是放弃债券的5%收益。"
+    }
+  },
+  "PresentValueCalculator": {
+    "title": "现值计算器",
+    "subtitle": "计算未来现金流的现在价值，帮助您评估投资项目的真实价值",
+    "formCard": {
+      "title": "计算参数",
+      "description": "输入相关参数计算现值",
+      "futureValueLabel": "未来价值 ({currency})",
+      "futureValuePlaceholder": "例如：1000000",
+      "interestRateLabel": "年利率 (%)",
+      "interestRatePlaceholder": "例如：5",
+      "yearsLabel": "年数",
+      "yearsPlaceholder": "例如：5",
+      "calculateButton": "计算现值"
+    },
+    "results": {
+      "title": "计算结果",
+      "summary": "{years}年后的{currency}{fv}，在{rate}%年利率下的现值"
+    },
+    "infoCard": {
+      "title": "什么是现值？",
+      "description": "现值（Present Value）是未来某笔钱在今天的价值。由于金钱具有时间价值，今天的1元钱比未来的1元钱更有价值。",
+      "formulaTitle": "计算公式：",
+      "formula": "PV = FV / (1 + r)^n",
+      "formulaTerms": [
+        "PV = 现值",
+        "FV = 未来价值",
+        "r = 利率",
+        "n = 年数"
+      ]
+    },
+    "alert": {
+      "title": "实际应用：",
+      "description": "现值计算广泛应用于投资决策、项目评估、债券定价等场景。当项目的现值大于投资成本时，该项目通常值得投资。"
+    },
+    "caseStudyCard": {
+      "title": "案例示例",
+      "commitmentCaseTitle": "案例：承诺函价值",
+      "commitmentCaseDescription": "一张一年后支付100万元的央行承诺函，在5%市场利率下，今天的价值是95.2万元。",
+      "projectCaseTitle": "案例：投资项目评估",
+      "projectCaseDescription": "某项目一年后产生100万现金，五年后产生80万现金。在5%利率下，项目现值为157.9万元。"
+    }
   }
 } 

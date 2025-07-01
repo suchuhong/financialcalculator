@@ -424,5 +424,380 @@
         "3": "Valuation: Measuring and Managing the Value of Companies - Damodaran"
       }
     }
+  },
+  "ToolsGrid": {
+    "title": "Professional Financial Tools",
+    "subtitle": "Providing accurate and reliable calculation results based on rigorous financial theories.",
+    "buttonText": "Use Now",
+    "tools": {
+      "presentValue": {
+        "title": "Present Value Calculator",
+        "description": "Calculate the present value of future cash flows to assess the true value of investments."
+      },
+      "futureValue": {
+        "title": "Future Value Calculator",
+        "description": "Forecast the future value of a current investment at a specific point in time."
+      },
+      "irr": {
+        "title": "IRR Calculator",
+        "description": "Calculate the Internal Rate of Return to accurately assess project profitability."
+      },
+      "loan": {
+        "title": "Loan Calculator",
+        "description": "Calculate the real annual interest rate to avoid being misled by nominal rates."
+      },
+      "breakeven": {
+        "title": "Breakeven Calculator",
+        "description": "Calculate the required gain to recover from a stock's decline."
+      },
+      "opportunityCost": {
+        "title": "Opportunity Cost Calculator",
+        "description": "Evaluate the opportunity cost of different investment choices."
+      }
+    }
+  },
+  "KnowledgePreview": {
+    "title": "Core Financial Concepts",
+    "subtitle": "Understand complex financial concepts with simple explanations and practical examples.",
+    "exampleLabel": "Example:",
+    "buttonText": "Explore the Full Knowledge Base",
+    "concepts": {
+      "timeValue": {
+        "title": "Time Value of Money",
+        "description": "A dollar today is worth more than a dollar tomorrow, not due to inflation, but because today's dollar can earn interest.",
+        "example": "Multiple Choice: Would you prefer ¥100,000 today or ¥110,000 one year from now?"
+      },
+      "presentFutureValue": {
+        "title": "Present & Future Value",
+        "description": "Present value is the value today of a future sum of money. Future value is the value of a current asset at a future date.",
+        "example": "The present value of ¥1,000,000 one year from now at a 5% interest rate is ¥952,000."
+      },
+      "irr": {
+        "title": "Internal Rate of Return (IRR)",
+        "description": "IRR considers the timing of all cash flows to tell us the true rate of return on an investment.",
+        "example": "The same investment of ¥500,000 can result in different IRRs based on the timing of cash flows."
+      },
+      "misconceptions": {
+        "title": "Common Financial Misconceptions",
+        "description": "A stock returning to its purchase price doesn't mean you've broken even. The nominal interest rate on a loan can be much lower than the real rate.",
+        "example": "If a stock drops by 30%, it needs to rise by 42.86% to break even."
+      }
+    }
+  },
+  "CaseStudies": {
+    "title": "Real-World Case Studies",
+    "subtitle": "See how financial knowledge guides practical decisions through real-life examples.",
+    "insightLabel": "Key Insight:",
+    "cases": {
+      "rideShare": {
+        "title": "Ride-Sharing Investment Comparison",
+        "description": "With the same ¥500,000 investment, which of the three different cash flow arrangements is better?",
+        "insight": "Cash recovered earlier leverages the time value of money. Although Scheme 2 has the same total income, it has the highest IRR.",
+        "scenarios": [
+          { "name": "Scheme 1", "irr": "IRR: 5.2%", "description": "Stable income, ¥100k/year" },
+          { "name": "Scheme 2", "irr": "IRR: 7.5%", "description": "High income early, low later" },
+          { "name": "Scheme 3", "irr": "IRR: 5.9%", "description": "Higher early income, less total income but higher IRR" }
+        ]
+      },
+      "lottery": {
+        "title": "Lottery Winnings Choice",
+        "description": "Win $200M: Take $90M immediately or receive $200M over 30 years?",
+        "insight": "Most people correctly choose the lump sum because they can invest it immediately for a higher return.",
+        "scenarios": [
+          { "name": "Lump Sum", "irr": "Return ~4-5%", "description": "Receive $90 million now" },
+          { "name": "Annuity", "irr": "Return ~2-3%", "description": "Receive $200 million over 30 years" }
+        ]
+      },
+      "rentDeposit": {
+        "title": "The Hidden Cost of a Security Deposit",
+        "description": "When renting, don't just look at the rent amount; the tied-up capital in a security deposit has an opportunity cost.",
+        "insight": "Although the deposit is returned, its opportunity cost during the holding period cannot be ignored.",
+        "scenarios": [
+          { "name": "Option A", "irr": "Rent ¥5000, Deposit ¥10k", "description": "The seemingly cheaper choice" },
+          { "name": "Option B", "irr": "Rent ¥5200, Deposit ¥5k", "description": "Potentially better after considering opportunity cost" }
+        ]
+      }
+    }
+  },
+  "BreakevenCalculator": {
+    "title": "Breakeven Calculator",
+    "subtitle": "Calculate the required gain to truly break even after a stock's price has dropped.",
+    "formCard": {
+      "title": "Investment Parameters",
+      "description": "Enter your investment details to calculate breakeven requirements.",
+      "buyPriceLabel": "Buy Price ({currency})",
+      "buyPricePlaceholder": "e.g., 100",
+      "currentPriceLabel": "Current Price ({currency})",
+      "currentPricePlaceholder": "e.g., 70",
+      "holdingYearsLabel": "Holding Period (Years, Optional)",
+      "holdingYearsPlaceholder": "e.g., 3",
+      "holdingYearsDescription": "Used to calculate opportunity cost.",
+      "expectedReturnLabel": "Expected Annual Return (%)",
+      "expectedReturnDescription": "Used for opportunity cost calculation. Default is 3%.",
+      "buttonText": "Calculate Breakeven"
+    },
+    "results": {
+      "lossAnalysisTitle": "Loss Analysis",
+      "currentLoss": "Current Loss: [[lossPercentage}%",
+      "requiredGain": "Required Gain: [[requiredGain}% to return to the buy price",
+      "trueBreakevenAnalysisTitle": "True Breakeven Analysis",
+      "trueBreakevenPrice": "True Breakeven Price: [[currency]][[price]]",
+      "opportunityCost": "Opportunity Cost: [[currency]][[cost]]",
+      "opportunityCostNote": "Considers the time value and opportunity cost over [[years]] years."
+    },
+    "infoCard": {
+      "title": "The Mathematical Truth of Breaking Even",
+      "description": "After a stock falls, it requires a larger percentage gain to recover. This is because the calculation base has changed.",
+      "formulaTitle": "Breakeven Formula:",
+      "formula": "Breakeven Gain % = (Buy Price - Current Price) / Current Price",
+      "examples": [
+        "• Fall 10% → Needs to rise 11.11%",
+        "• Fall 30% → Needs to rise 42.86%",
+        "• Fall 50% → Needs to rise 100%",
+        "• Fall 70% → Needs to rise 233%"
+      ]
+    },
+    "alert": {
+      "title": "Opportunity Cost Reminder:",
+      "description": "Even if a stock returns to its purchase price, it doesn't mean you've truly broken even. There's a time value and opportunity cost for the period your capital was tied up."
+    },
+    "caseStudyCard": {
+      "title": "Real-World Examples",
+      "deepLossCaseTitle": "Case: Deeply Underwater",
+      "deepLossCaseDescription": "A stock bought for $100,000 ten years ago is worth $100,000 today. It seems you've broken even, but considering a 3% annual return, the true breakeven value is $134,391.",
+      "shortTermCaseTitle": "Case: Short-Term Fluctuation",
+      "shortTermCaseDescription": "A stock drops from $100 to $70 (-30%). It needs to rise to $142.86 (+42.86%) just to get back to the purchase price."
+    }
+  },
+  "FutureValueCalculator": {
+    "title": "Future Value Calculator",
+    "subtitle": "Forecast the value of a current investment at a future point in time.",
+    "formCard": {
+      "title": "Calculation Parameters",
+      "description": "Enter the relevant parameters to calculate the future value.",
+      "presentValueLabel": "Present Value ({currency})",
+      "presentValuePlaceholder": "e.g., 100000",
+      "interestRateLabel": "Annual Interest Rate (%)",
+      "interestRatePlaceholder": "e.g., 8",
+      "yearsLabel": "Number of Years",
+      "yearsPlaceholder": "e.g., 10",
+      "compoundFrequencyLabel": "Compound Frequency",
+      "compoundFrequencyOptions": [
+        { "value": "1", "label": "Annually" },
+        { "value": "2", "label": "Semi-annually" },
+        { "value": "4", "label": "Quarterly" },
+        { "value": "12", "label": "Monthly" },
+        { "value": "365", "label": "Daily" }
+      ],
+      "buttonText": "Calculate Future Value"
+    },
+    "results": {
+      "title": "Calculation Result",
+      "summary": "Value after {years} years at an annual interest rate of {rate}%",
+      "totalInterest": "Total Interest: "
+    },
+    "infoCard": {
+      "title": "What is Future Value?",
+      "description": "Future Value (FV) is the value of a current asset at a future date based on an assumed rate of growth. It considers the effect of compound interest.",
+      "formulaTitle": "Compound Interest Formula:",
+      "formula": "FV = PV × (1 + r/n)^(n×t)",
+      "formulaTerms": [
+        "FV = Future Value",
+        "PV = Present Value",
+        "r = Annual interest rate",
+        "n = Number of times that interest is compounded per year",
+        "t = Number of years"
+      ]
+    },
+    "alert": {
+      "title": "The Power of Compounding:",
+      "description": "Albert Einstein called compound interest the 'eighth wonder of the world.' The longer the time, the more significant the compounding effect. Even small investments can generate surprising returns over the long term."
+    },
+    "caseStudyCard": {
+      "title": "Investment Cases",
+      "longTermCaseTitle": "Case: Long-Term Investment",
+      "longTermCaseDescription": "An investment of $100,000 with an 8% annual return will be worth about $216,000 after 10 years, demonstrating the power of compounding.",
+      "frequencyCaseTitle": "Case: Impact of Compounding Frequency",
+      "frequencyCaseDescription": "Under the same conditions, monthly compounding yields about $3,000 more than annual compounding, highlighting the importance of frequency."
+    }
+  },
+  "IRRCalculator": {
+    "title": "IRR Calculator",
+    "subtitle": "Calculate the Internal Rate of Return to accurately assess project profitability.",
+    "formCard": {
+      "title": "Cash Flow Setup",
+      "description": "Enter the initial investment and annual cash flows.",
+      "initialInvestmentLabel": "Initial Investment ({currency})",
+      "initialInvestmentPlaceholder": "e.g., 500000",
+      "cashFlowsLabel": "Annual Cash Flows",
+      "addYearButton": "Add Year",
+      "yearLabel": "Year {year}",
+      "cashFlowPlaceholder": "Cash inflow",
+      "calculateButton": "Calculate IRR"
+    },
+    "results": {
+      "title": "Result",
+      "description": "The Internal Rate of Return (IRR) for this investment project."
+    },
+    "infoCard": {
+      "title": "What is IRR?",
+      "description": "The Internal Rate of Return (IRR) is the discount rate that makes the Net Present Value (NPV) of a project zero. It fully considers the timing of cash inflows and outflows.",
+      "advantagesTitle": "Advantages of IRR:",
+      "advantagesList": [
+        "• Considers the time value of money",
+        "• Reflects the true rate of return",
+        "• Facilitates comparison between different projects",
+        "• Accounts for the distribution of cash flows over time"
+      ]
+    },
+    "alert": {
+      "title": "Decision Rule:",
+      "description": "A project is worth investing in when its IRR is greater than the cost of capital or the required rate of return. The higher the IRR, the more valuable the investment."
+    },
+    "caseStudyCard": {
+      "title": "Ride-Sharing Investment Case",
+      "scenario1Title": "Scheme 1 (Stable Income)",
+      "scenario1Description": "Invest $500k, get $100k/year for 5 years, sell the car for $90k in year 5. IRR: 5.2%",
+      "scenario2Title": "Scheme 2 (High Early Income)",
+      "scenario2Description": "Invest $500k, get $200k/year for the first 2 years, then $50k/year for 3 years, sell for $90k in year 5. IRR: 7.5% (Optimal)",
+      "insightTitle": "Key Insight",
+      "insightDescription": "Cash recovered earlier leverages the time value of money. Even with the same total income, the IRR can be different."
+    }
+  },
+  "LoanCalculator": {
+    "title": "Loan Rate Calculator",
+    "subtitle": "Calculate the real annual interest rate to avoid being misled by nominal rates.",
+    "formCard": {
+      "title": "Loan Parameters",
+      "description": "Enter your loan details to calculate the true interest rate.",
+      "loanAmountLabel": "Loan Amount ({currency})",
+      "loanAmountPlaceholder": "e.g., 100000",
+      "nominalRateLabel": "Nominal Annual Rate (%)",
+      "nominalRatePlaceholder": "e.g., 5",
+      "loanTermLabel": "Loan Term (Years)",
+      "loanTermPlaceholder": "e.g., 2",
+      "monthlyPaymentLabel": "Monthly Payment ({currency}) - Optional",
+      "monthlyPaymentPlaceholder": "Enter if known, to calculate the actual rate",
+      "monthlyPaymentDescription": "Leave blank to calculate standard payment; fill in to find the actual rate for that payment.",
+      "calculateButton": "Calculate"
+    },
+    "results": {
+      "title": "Calculation Result",
+      "actualRate": "Actual Annual Rate (APR): {rate}%",
+      "monthlyPayment": "Monthly Payment: {currency}{payment}",
+      "totalPayment": "Total Payment: {currency}{payment}",
+      "totalInterest": "Total Interest: {currency}{interest}",
+      "rateMultiplierWarning": "⚠️ The actual rate is {multiplier} times the nominal rate!"
+    },
+    "infoCard": {
+      "title": "The Loan Rate Trap",
+      "description": "Many non-standard financial institutions use the 'flat rate' method to calculate interest, making the actual rate much higher than the nominal rate, because the principal you owe decreases over time.",
+      "comparisonTitle": "Flat Rate vs. Amortizing Method:",
+      "comparisonList": [
+        { "term": "Flat Rate", "desc": "Interest is calculated on the initial principal" },
+        { "term": "Amortizing", "desc": "Interest is calculated on the remaining principal" },
+        { "term": "Important Note", "desc": "The actual rate for a flat rate loan is roughly 1.8 times the nominal rate." }
+      ]
+    },
+    "alert": {
+      "title": "Risk Warning:",
+      "description": "The 'flat rate' method is common in auto financing, small loans, and private lending. Regulated banks use standard amortizing methods (like equal installment), which are more transparent."
+    },
+    "caseStudyCard": {
+      "title": "Case Comparison",
+      "flatRateCaseTitle": "The 'Flat Rate' Trap",
+      "flatRateCaseDescription": "A $100,000 loan at a 5% nominal annual rate for 2 years. If the monthly payment is $4,583, the actual APR is a staggering 9.3%!",
+      "amortizedCaseTitle": "Standard 'Amortizing' Method",
+      "amortizedCaseDescription": "Under the same conditions, a standard bank loan would have a monthly payment of about $4,387, and the actual APR would be exactly 5%."
+    }
+  },
+  "OpportunityCostCalculator": {
+    "title": "Opportunity Cost Calculator",
+    "subtitle": "Evaluate the opportunity cost of different investment choices to find the optimal option.",
+    "formCard": {
+      "title": "Investment Option Comparison",
+      "addButton": "Add Option",
+      "description": "Enter different investment options to compare.",
+      "optionNamePlaceholder": "Option Name",
+      "amountLabel": "Amount",
+      "amountPlaceholder": "Amount",
+      "returnLabel": "Annual Return (%)",
+      "returnPlaceholder": "Rate",
+      "yearsLabel": "Years",
+      "yearsPlaceholder": "Years",
+      "calculateButton": "Calculate Opportunity Cost",
+      "defaultOptionName": "Option {letter}"
+    },
+    "results": {
+      "bestOptionTitle": "Best Option",
+      "analysisTitle": "Opportunity Cost Analysis",
+      "futureValueLabel": "Future Value",
+      "opportunityCostLabel": "Opportunity Cost",
+      "bestChoiceLabel": "Best Choice"
+    },
+    "infoCard": {
+      "title": "What is Opportunity Cost?",
+      "description": "Opportunity cost is the potential benefit that is missed when choosing one alternative over another. In investment decisions, it helps identify the best choice.",
+      "applicationsTitle": "Applications of Opportunity Cost:",
+      "applicationsList": [
+        "• Comparing investment projects",
+        "• Capital allocation decisions",
+        "• Career path choices",
+        "• Time management decisions"
+      ]
+    },
+    "alert": {
+      "title": "Decision Principle:",
+      "description": "Choose the option with the lowest opportunity cost, which is the one that provides the greatest benefit. The option with zero opportunity cost is the optimal choice."
+    },
+    "caseStudyCard": {
+      "title": "Real-World Application",
+      "rentCaseTitle": "Case: Security Deposit",
+      "rentCaseDescription": "Rent $5000 with a $10000 deposit vs. Rent $5200 with a $5000 deposit. Considering the opportunity cost of the deposit, the latter might be better.",
+      "investmentCaseTitle": "Case: Investment Choice",
+      "investmentCaseDescription": "Investing in stocks with an 8% return vs. bonds with a 5% return. The opportunity cost of choosing stocks is the 5% return from the bonds you forgo."
+    }
+  },
+  "PresentValueCalculator": {
+    "title": "Present Value Calculator",
+    "subtitle": "Calculate the present value of future cash flows to help you assess the true value of investment projects.",
+    "formCard": {
+      "title": "Calculation Parameters",
+      "description": "Enter the relevant parameters to calculate the present value.",
+      "futureValueLabel": "Future Value ({currency})",
+      "futureValuePlaceholder": "e.g., 1000000",
+      "interestRateLabel": "Annual Interest Rate (%)",
+      "interestRatePlaceholder": "e.g., 5",
+      "yearsLabel": "Number of Years",
+      "yearsPlaceholder": "e.g., 5",
+      "calculateButton": "Calculate Present Value"
+    },
+    "results": {
+      "title": "Calculation Result",
+      "summary": "The present value of {currency}{fv} in {years} years at an annual interest rate of {rate}%"
+    },
+    "infoCard": {
+      "title": "What is Present Value?",
+      "description": "Present Value (PV) is the current worth of a future sum of money. Due to the time value of money, a dollar today is worth more than a dollar in the future.",
+      "formulaTitle": "Calculation Formula:",
+      "formula": "PV = FV / (1 + r)^n",
+      "formulaTerms": [
+        "PV = Present Value",
+        "FV = Future Value",
+        "r = Interest Rate",
+        "n = Number of years"
+      ]
+    },
+    "alert": {
+      "title": "Practical Application:",
+      "description": "Present value is widely used in investment decisions, project valuation, and bond pricing. When the present value of a project exceeds its investment cost, it is generally considered a worthwhile investment."
+    },
+    "caseStudyCard": {
+      "title": "Example Cases",
+      "commitmentCaseTitle": "Case: Value of a Promissory Note",
+      "commitmentCaseDescription": "A central bank's promise to pay $1,000,000 in one year is worth $952,000 today, assuming a 5% market interest rate.",
+      "projectCaseTitle": "Case: Investment Project Valuation",
+      "projectCaseDescription": "A project generates $1M in one year and $800k in five years. At a 5% interest rate, the project's present value is $1,579,000."
+    }
   }
 } 

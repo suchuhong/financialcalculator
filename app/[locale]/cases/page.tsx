@@ -3,15 +3,14 @@ import { getTranslations } from 'next-intl/server'
 import type { Metadata } from "next"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Car, Home, TrendingUp, DollarSign, Calculator, AlertTriangle } from "lucide-react"
+import { Car, TrendingUp, AlertTriangle } from "lucide-react"
 
 type Props = {
   params: Promise<{ locale: string }>
 }
  
 export async function generateMetadata(
-  { params }: Props,
-  parent: ResolvingMetadata
+  { params }: Props
 ): Promise<Metadata> {
 
   const {locale} = await params;
@@ -197,20 +196,20 @@ export default function CasesPage() {
                       <div key={index} className="border rounded-lg p-4 space-y-3">
                         <div className="flex items-center justify-between">
                           <h4 className="font-semibold text-lg">{t(scenario.nameKey)}</h4>
-                          {scenario.irr && <Badge className="bg-green-100 text-green-800">IRR: {scenario.irr}%</Badge>}
+                          {'irr' in scenario && scenario.irr && (
+                            <Badge className="bg-green-100 text-green-800">IRR: {scenario.irr}%</Badge>
+                          )}
                         </div>
 
                         {/* 现金流显示 */}
-                        {scenario.cashFlows && (
+                        {'cashFlows' in scenario && scenario.cashFlows && (
                           <div className="space-y-2">
                             <p className="text-sm font-medium text-gray-700">{t('cases.cashFlows')}：</p>
                             <div className="space-y-1">
-                              <div className="text-sm text-red-600">
-                                {t('cases.initialInvestment')}: -¥{scenario.investment?.toLocaleString()}
-                              </div>
-                              {scenario.cashFlows.map((cf, cfIndex) => (
-                                <div key={cfIndex} className="text-sm text-green-600">
-                                  {t('cases.year', { year: cf.year })}: +¥{cf.amount.toLocaleString()} ({t(cf.descriptionKey)})
+                              {scenario.cashFlows.map((flow) => (
+                                <div key={flow.year} className="flex justify-between text-sm">
+                                  <span>{t(flow.descriptionKey)}</span>
+                                  <span className="font-mono">{flow.amount}</span>
                                 </div>
                               ))}
                             </div>

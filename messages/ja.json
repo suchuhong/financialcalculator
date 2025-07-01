@@ -424,5 +424,380 @@
         "3": "『企業価値評価：難点、解決策、関連事例』- ダモダラン"
       }
     }
+  },
+  "ToolsGrid": {
+    "title": "専門的な金融計算ツール",
+    "subtitle": "厳密な金融理論に基づき、正確で信頼性の高い計算結果を提供します。",
+    "buttonText": "今すぐ利用",
+    "tools": {
+      "presentValue": {
+        "title": "現在価値計算ツール",
+        "description": "将来のキャッシュフローの現在価値を計算し、投資の真の価値を評価します。"
+      },
+      "futureValue": {
+        "title": "将来価値計算ツール",
+        "description": "現在の投資が将来のある時点でいくらになるかを予測します。"
+      },
+      "irr": {
+        "title": "IRR（内部収益率）計算ツール",
+        "description": "内部収益率を算出し、投資プロジェクトの収益性を正確に評価します。"
+      },
+      "loan": {
+        "title": "ローン金利計算ツール",
+        "description": "実質年率を計算し、名目金利に惑わされないようにします。"
+      },
+      "breakeven": {
+        "title": "元本回復計算ツール",
+        "description": "株価が下落した後、元本を回復するために必要な上昇率を計算します。"
+      },
+      "opportunityCost": {
+        "title": "機会費用計算ツール",
+        "description": "異なる投資選択肢の機会費用を評価します。"
+      }
+    }
+  },
+  "KnowledgePreview": {
+    "title": "金融の核心概念",
+    "subtitle": "複雑な金融概念を、平易な解説と具体的な事例で理解しましょう。",
+    "exampleLabel": "具体例：",
+    "buttonText": "知識ベース全体を見る",
+    "concepts": {
+      "timeValue": {
+        "title": "お金の時間的価値",
+        "description": "今日の一円は明日の一円よりも価値があります。これはインフレのためではなく、今日のお金が利息を生むことができるためです。",
+        "example": "選択問題：今日10万円を受け取るのと、一年後に11万円を受け取るのと、どちらを選びますか？"
+      },
+      "presentFutureValue": {
+        "title": "現在価値と将来価値",
+        "description": "現在価値とは将来のお金の今日の価値であり、将来価値とは今日のお金の将来のある時点での価値です。",
+        "example": "一年後の100万円は、利率5%の場合、今日の価値では95.2万円に相当します。"
+      },
+      "irr": {
+        "title": "内部収益率（IRR）",
+        "description": "IRRはキャッシュフローのタイミングを考慮し、投資の真のリターン率を示します。",
+        "example": "同じ50万円の投資でも、キャッシュフローのタイミングが異なれば、IRRも異なります。"
+      },
+      "misconceptions": {
+        "title": "よくある金融の誤解",
+        "description": "株価が買値に戻っても元本が回収できたとは限りません。ローンの名目金利は実質金利よりはるかに低いことがあります。",
+        "example": "株価が30%下落した場合、元に戻すには42.86%の上昇が必要です。"
+      }
+    }
+  },
+  "CaseStudies": {
+    "title": "実践的なケーススタディ",
+    "subtitle": "実際の事例を通じて、金融知識がどのように意思決定を導くかを見てみましょう。",
+    "insightLabel": "重要な洞察：",
+    "cases": {
+      "rideShare": {
+        "title": "ライドシェア投資比較",
+        "description": "同じ50万元の投資で、3つの異なるキャッシュフローのうち、どの案が最適か？",
+        "insight": "早期に回収した現金がお金の時間的価値を発揮します。案2は総収入が同じでもIRRが最も高くなります。",
+        "scenarios": [
+          { "name": "案1", "irr": "IRR: 5.2%", "description": "安定収入、年間10万元" },
+          { "name": "案2", "irr": "IRR: 7.5%", "description": "初期に高収入、後期に低収入" },
+          { "name": "案3", "irr": "IRR: 5.9%", "description": "初期収入は更に高いが、総収入は少なくIRRは高い" }
+        ]
+      },
+      "lottery": {
+        "title": "宝くじ当選金の選択",
+        "description": "2億ドルの当選金：9000万ドルを即時受け取るか、2億ドルを30年分割で受け取るか？",
+        "insight": "ほとんどの人が一括受取を選ぶのは正解です。なぜなら、すぐに投資してより高いリターンを得られるからです。",
+        "scenarios": [
+          { "name": "一括受取", "irr": "リターン約4-5%", "description": "9000万ドルを即時受取" },
+          { "name": "分割払", "irr": "リターン約2-3%", "description": "30年間で総額2億ドル" }
+        ]
+      },
+      "rentDeposit": {
+        "title": "賃貸の敷金の隠れたコスト",
+        "description": "部屋を借りる際は家賃だけでなく、敷金として拘束される資金の機会費用も考慮すべきです。",
+        "insight": "敷金は返還されますが、その資金が拘束されている間の機会費用は無視できません。",
+        "scenarios": [
+          { "name": "プランA", "irr": "家賃5000、敷金1万", "description": "一見安価な選択肢" },
+          { "name": "プランB", "irr": "家賃5200、敷金5000", "description": "機会費用を考慮するとより有利な可能性" }
+        ]
+      }
+    }
+  },
+  "BreakevenCalculator": {
+    "title": "投資回収（元本回復）計算ツール",
+    "subtitle": "株価が下落した後、元本を回復するために必要な上昇率を計算します。",
+    "formCard": {
+      "title": "投資パラメータ",
+      "description": "投資情報を入力して、元本回復の要件を計算します。",
+      "buyPriceLabel": "購入価格 ({currency})",
+      "buyPricePlaceholder": "例：100",
+      "currentPriceLabel": "現在価格 ({currency})",
+      "currentPricePlaceholder": "例：70",
+      "holdingYearsLabel": "保有年数（任意）",
+      "holdingYearsPlaceholder": "例：3",
+      "holdingYearsDescription": "機会費用の計算に使用します。",
+      "expectedReturnLabel": "期待年間リターン率 (%)",
+      "expectedReturnDescription": "機会費用の計算に使用します。デフォルトは3%です。",
+      "buttonText": "元本回復の要件を計算"
+    },
+    "results": {
+      "lossAnalysisTitle": "損失分析",
+      "currentLoss": "現在の損失: [[lossPercentage]]%",
+      "requiredGain": "購入価格に戻るには[[requiredGain]]%の上昇が必要です",
+      "trueBreakevenAnalysisTitle": "真の元本回復分析",
+      "trueBreakevenPrice": "真の元本回復価格: [[currency]][[price]]",
+      "opportunityCost": "機会費用: [[currency]][[cost]]",
+      "opportunityCostNote": "[[years]]年間の時間的価値と機会費用を考慮しています。"
+    },
+    "infoCard": {
+      "title": "元本回復の数学的真実",
+      "description": "株価が下落した後、回復するにはより大きな上昇率が必要です。これは計算の基準となる価格が変化するためです。",
+      "formulaTitle": "回復上昇率の計算式：",
+      "formula": "回復上昇率 = (購入価格 - 現在価格) / 現在価格",
+      "examples": [
+        "• 10%下落 → 11.11%の上昇が必要",
+        "• 30%下落 → 42.86%の上昇が必要",
+        "• 50%下落 → 100%の上昇が必要",
+        "• 70%下落 → 233%の上昇が必要"
+      ]
+    },
+    "alert": {
+      "title": "機会費用に関する注意：",
+      "description": "株価が購入価格に戻ったとしても、本当に元が取れたわけではありません。資金が拘束されていた期間には、時間的価値と機会費用が存在します。"
+    },
+    "caseStudyCard": {
+      "title": "実際のケース",
+      "deepLossCaseTitle": "ケース：長期的な塩漬け",
+      "deepLossCaseDescription": "10年前に1000万円で購入した株が今日1000万円に戻った。一見元本を回復したが、年率3%のリターンを考慮すると、真の元本回復には1344万円が必要。",
+      "shortTermCaseTitle": "ケース：短期的な変動",
+      "shortTermCaseDescription": "株価が100円から70円に下落（-30%）。購入価格に戻すには、70円から142.86円（+42.86%）まで上昇する必要がある。"
+    }
+  },
+  "FutureValueCalculator": {
+    "title": "将来価値計算ツール",
+    "subtitle": "現在の投資が将来のある時点でいくらになるかを予測します。",
+    "formCard": {
+      "title": "計算パラメータ",
+      "description": "関連パラメータを入力して将来価値を計算します。",
+      "presentValueLabel": "現在価値 ({currency})",
+      "presentValuePlaceholder": "例：100000",
+      "interestRateLabel": "年利率 (%)",
+      "interestRatePlaceholder": "例：8",
+      "yearsLabel": "投資年数",
+      "yearsPlaceholder": "例：10",
+      "compoundFrequencyLabel": "複利計算の頻度",
+      "compoundFrequencyOptions": [
+        { "value": "1", "label": "年複利" },
+        { "value": "2", "label": "半年複利" },
+        { "value": "4", "label": "四半期複利" },
+        { "value": "12", "label": "月複利" },
+        { "value": "365", "label": "日複利" }
+      ],
+      "buttonText": "将来価値を計算"
+    },
+    "results": {
+      "title": "計算結果",
+      "summary": "年利率{rate}%で{years}年後の価値",
+      "totalInterest": "総収益："
+    },
+    "infoCard": {
+      "title": "将来価値とは？",
+      "description": "将来価値（Future Value）とは、今日のお金が将来のある時点でいくらになるかを示す価値です。利息が利息を生む「複利効果」を考慮に入れます。",
+      "formulaTitle": "複利計算式：",
+      "formula": "FV = PV × (1 + r/n)^(n×t)",
+      "formulaTerms": [
+        "FV = 将来価値",
+        "PV = 現在価値",
+        "r = 年利率",
+        "n = 年間の複利計算回数",
+        "t = 年数"
+      ]
+    },
+    "alert": {
+      "title": "複利の力：",
+      "description": "アインシュタインは複利を「世界で8番目の不思議」と呼びました。時間が長ければ長いほど、複利の効果は顕著になります。少額の投資でも、長期間続けることで驚くべきリターンを生み出すことができます。"
+    },
+    "caseStudyCard": {
+      "title": "投資ケーススタディ",
+      "longTermCaseTitle": "ケース：長期投資",
+      "longTermCaseDescription": "100万円を年利8%で投資すると、10年後には約216万円になります。これは複利の力を示す好例です。",
+      "frequencyCaseTitle": "ケース：複利頻度の影響",
+      "frequencyCaseDescription": "同じ条件下で、月複利は年複利よりも約3万円多くの収益を生み出します。これは複利計算の頻度の重要性を示しています。"
+    }
+  },
+  "IRRCalculator": {
+    "title": "IRR（内部収益率）計算ツール",
+    "subtitle": "内部収益率を算出し、投資プロジェクトの収益性を正確に評価します。",
+    "formCard": {
+      "title": "キャッシュフロー設定",
+      "description": "初期投資と各年のキャッシュフローを入力してください。",
+      "initialInvestmentLabel": "初期投資 ({currency})",
+      "initialInvestmentPlaceholder": "例：500000",
+      "cashFlowsLabel": "各年のキャッシュフロー",
+      "addYearButton": "年を追加",
+      "yearLabel": "{year}年目",
+      "cashFlowPlaceholder": "キャッシュインフロー",
+      "calculateButton": "IRRを計算"
+    },
+    "results": {
+      "title": "計算結果",
+      "description": "この投資プロジェクトの内部収益率"
+    },
+    "infoCard": {
+      "title": "IRRとは？",
+      "description": "内部収益率（IRR）とは、投資プロジェクトの正味現在価値（NPV）をゼロにする割引率のことです。キャッシュの流入と流出のタイミングを十分に考慮します。",
+      "advantagesTitle": "IRRの利点：",
+      "advantagesList": [
+        "• お金の時間的価値を考慮",
+        "• 真の投資収益率を反映",
+        "•異なるプロジェクト間の比較が容易",
+        "• キャッシュフローの時間的分散を考慮"
+      ]
+    },
+    "alert": {
+      "title": "意思決定の基準：",
+      "description": "IRRが資本コストや要求収益率を上回る場合、そのプロジェクトは投資価値があります。IRRが高ければ高いほど、投資価値は大きくなります。"
+    },
+    "caseStudyCard": {
+      "title": "ライドシェア投資ケース",
+      "scenario1Title": "案1（安定収入）",
+      "scenario1Description": "50万円を投資し、5年間毎年10万円の収入を得、5年目に車を9万円で売却。IRR: 5.2%",
+      "scenario2Title": "案2（初期高収入）",
+      "scenario2Description": "50万円を投資し、最初の2年間は毎年20万円、その後3年間は毎年5万円の収入を得、5年目に9万円で売却。IRR: 7.5%（最適）",
+      "insightTitle": "重要な洞察",
+      "insightDescription": "早期に回収された現金は、お金の時間的価値を有効に活用します。総収入が同じでも、IRRは異なります。"
+    }
+  },
+  "LoanCalculator": {
+    "title": "ローン金利計算ツール",
+    "subtitle": "実質年率を計算し、名目金利に惑わされないようにしましょう。",
+    "formCard": {
+      "title": "ローンパラメータ",
+      "description": "ローンの詳細を入力して、真の金利を計算します。",
+      "loanAmountLabel": "借入額 ({currency})",
+      "loanAmountPlaceholder": "例：100000",
+      "nominalRateLabel": "名目年率 (%)",
+      "nominalRatePlaceholder": "例：5",
+      "loanTermLabel": "返済期間 (年)",
+      "loanTermPlaceholder": "例：2",
+      "monthlyPaymentLabel": "毎月の返済額 ({currency}) - 任意",
+      "monthlyPaymentPlaceholder": "分かっている場合、実質金利の計算のため入力",
+      "monthlyPaymentDescription": "空欄の場合は標準的な返済額を計算し、入力した場合はその返済額の実質年率を逆算します。",
+      "calculateButton": "計算する"
+    },
+    "results": {
+      "title": "計算結果",
+      "actualRate": "実質年率 (APR): {rate}%",
+      "monthlyPayment": "毎月の返済額: {currency}{payment}",
+      "totalPayment": "総返済額: {currency}{payment}",
+      "totalInterest": "総利息: {currency}{interest}",
+      "rateMultiplierWarning": "⚠️ 実質年率は名目年率の {multiplier} 倍です！"
+    },
+    "infoCard": {
+      "title": "ローン金利の罠",
+      "description": "多くの金融機関が「アドオン金利」方式で利息を計算するため、実質年率が名目年率よりはるかに高くなります。これは、元本が毎月減少する事実が無視されるためです。",
+      "comparisonTitle": "アドオン金利 vs 残債方式：",
+      "comparisonList": [
+        { "term": "アドオン金利", "desc": "利息は当初の元本に対して計算される" },
+        { "term": "残債方式", "desc": "利息は残りの元本に対して計算される" },
+        { "term": "重要", "desc": "アドオン金利の実質年率は、名目年率の約1.8倍になります。" }
+      ]
+    },
+    "alert": {
+      "title": "リスク警告：",
+      "description": "「アドオン金利」はオートローン、小口ローン、個人間融資でよく使われます。正規の銀行は、より透明性の高い元利均等返済方式などを採用しています。"
+    },
+    "caseStudyCard": {
+      "title": "ケース比較",
+      "flatRateCaseTitle": "「アドオン金利」の罠",
+      "flatRateCaseDescription": "100万円を名目年率5%で2年間借り入れ。もし毎月の返済額が45,830円なら、実質年率はなんと9.3%に！",
+      "amortizedCaseTitle": "標準的な「元利均等返済」",
+      "amortizedCaseDescription": "同じ条件下なら、銀行の標準的なローンの毎月の返済額は約43,870円で、実質年率は正確に5%です。"
+    }
+  },
+  "OpportunityCostCalculator": {
+    "title": "機会費用計算ツール",
+    "subtitle": "さまざまな投資の選択肢の機会費用を評価し、最適な案を見つけます。",
+    "formCard": {
+      "title": "投資案の比較",
+      "addButton": "案を追加",
+      "description": "比較のために、さまざまな投資案を入力してください。",
+      "optionNamePlaceholder": "方案名",
+      "amountLabel": "投資額",
+      "amountPlaceholder": "金額",
+      "returnLabel": "年率リターン(%)",
+      "returnPlaceholder": "リターン率",
+      "yearsLabel": "投資年数",
+      "yearsPlaceholder": "年数",
+      "calculateButton": "機会費用を計算",
+      "defaultOptionName": "プラン{letter}"
+    },
+    "results": {
+      "bestOptionTitle": "最適案",
+      "analysisTitle": "機会費用分析",
+      "futureValueLabel": "将来価値",
+      "opportunityCostLabel": "機会費用",
+      "bestChoiceLabel": "最良の選択"
+    },
+    "infoCard": {
+      "title": "機会費用とは？",
+      "description": "機会費用とは、ある選択肢を選ぶために諦めた他の選択肢から得られたであろう最大の利益のことです。投資決定において、機会費用は最良の選択を見つけるのに役立ちます。",
+      "applicationsTitle": "機会費用の応用：",
+      "applicationsList": [
+        "• 投資プロジェクトの選択",
+        "• 資本配分の決定",
+        "• キャリアパスの選択",
+        "• 時間配分の決定"
+      ]
+    },
+    "alert": {
+      "title": "意思決定の原則：",
+      "description": "機会費用が最も低い選択肢、つまり最大の利益をもたらす選択肢を選びます。機会費用がゼロの選択肢が最適です。"
+    },
+    "caseStudyCard": {
+      "title": "実際の応用例",
+      "rentCaseTitle": "ケース：賃貸の敷金",
+      "rentCaseDescription": "家賃5000円で敷金1万円 vs 家賃5200円で敷金5000円。敷金の機会費用を考えると、後者の方が有利な場合があります。",
+      "investmentCaseTitle": "ケース：投資の選択",
+      "investmentCaseDescription": "8%のリターンがある株式投資 vs 5%のリターンがある債券投資。株式を選ぶ機会費用は、諦めた債券の5%のリターンです。"
+    }
+  },
+  "PresentValueCalculator": {
+    "title": "現在価値計算ツール",
+    "subtitle": "将来のキャッシュフローの現在価値を計算し、投資プロジェクトの真の価値の評価を支援します。",
+    "formCard": {
+      "title": "計算パラメータ",
+      "description": "関連パラメータを入力して現在価値を計算します。",
+      "futureValueLabel": "将来価値 ({currency})",
+      "futureValuePlaceholder": "例：1000000",
+      "interestRateLabel": "年利率 (%)",
+      "interestRatePlaceholder": "例：5",
+      "yearsLabel": "年数",
+      "yearsPlaceholder": "例：5",
+      "calculateButton": "現在価値を計算"
+    },
+    "results": {
+      "title": "計算結果",
+      "summary": "{years}年後、年利率{rate}%の場合の{currency}{fv}の現在価値"
+    },
+    "infoCard": {
+      "title": "現在価値とは？",
+      "description": "現在価値（Present Value）とは、将来のある金額が今日において持つ価値のことです。お金には時間的価値があるため、今日の1円は将来の1円よりも価値があります。",
+      "formulaTitle": "計算式：",
+      "formula": "PV = FV / (1 + r)^n",
+      "formulaTerms": [
+        "PV = 現在価値",
+        "FV = 将来価値",
+        "r = 利率",
+        "n = 年数"
+      ]
+    },
+    "alert": {
+      "title": "実用例：",
+      "description": "現在価値の計算は、投資決定、プロジェクト評価、債券価格設定などに広く利用されます。プロジェクトの現在価値が投資コストを上回る場合、そのプロジェクトは通常、投資する価値があると見なされます。"
+    },
+    "caseStudyCard": {
+      "title": "ケーススタディ",
+      "commitmentCaseTitle": "ケース：約束手形の価値",
+      "commitmentCaseDescription": "1年後に100万円を支払うという中央銀行の約束手形は、市場金利が5%の場合、今日の価値では95.2万円に相当します。",
+      "projectCaseTitle": "ケース：投資プロジェクト評価",
+      "projectCaseDescription": "あるプロジェクトが1年後に100万円、5年後に80万円のキャッシュを生み出す場合、5%の利率で計算すると、プロジェクトの現在価値は157.9万円です。"
+    }
   }
 } 

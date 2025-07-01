@@ -8,8 +8,7 @@ type Props = {
 }
  
 export async function generateMetadata(
-  { params }: Props,
-  parent: ResolvingMetadata
+  { params }: Props
 ): Promise<Metadata> {
 
   const {locale} = await params;

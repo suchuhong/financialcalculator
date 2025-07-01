@@ -2,24 +2,15 @@
 
 import {useTranslations, useLocale} from 'next-intl';
 import Link from 'next/link';
-import {usePathname} from 'next/navigation';
 import {useState} from "react";
 import {Button} from "@/components/ui/button";
-import {Menu, X, Calculator, BookOpen, BarChart3, Globe} from "lucide-react";
+import {Menu, X, Calculator, BookOpen, BarChart3} from "lucide-react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher"; 
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const t = useTranslations('navigation');
   const locale = useLocale();
-  const pathname = usePathname();
-  
-  // 切换语言函数
-  const switchLocale = (newLocale: string) => {
-    // 获取当前路径并替换语言部分
-    const newPath = pathname.replace(`/${locale}`, `/${newLocale}`);
-    return newPath;
-  };
   
   const navigation = [
     {name: t('home'), href: `/${locale}`, icon: null},
