@@ -1,6 +1,428 @@
 {
-    "HomePage": {
-      "title": "Hello world!",
-      "about": "Go to the about page"
+  "navigation": {
+    "home": "Home",
+    "tools": "Tools",
+    "knowledge": "Knowledge",
+    "cases": "Cases"
+  },
+  "hero": {
+    "title": "Master Financial Knowledge",
+    "subtitle": "Make Rational Investment Decisions",
+    "description": "In an era of high youth unemployment and degree devaluation, financial knowledge becomes essential. From home buying to investment, let data guide your every decision.",
+    "startUsingTools": "Start Using Tools",
+    "learnFinance": "Learn Finance"
+  },
+  "tools": {
+    "professionalTools": "Professional Calculation Tools",
+    "toolsDescription": "Based on rigorous financial theory, providing accurate and reliable calculation results",
+    "realCaseAnalysis": "Real Case Analysis",
+    "systematicKnowledge": "Systematic Knowledge",
+    "presentValueCalculator": "Present Value Calculator",
+    "futureValueCalculator": "Future Value Calculator",
+    "irrCalculator": "IRR Calculator",
+    "loanCalculator": "Loan Rate Calculator",
+    "breakevenCalculator": "Breakeven Calculator",
+    "opportunityCostCalculator": "Opportunity Cost Calculator"
+  },
+  "common": {
+    "calculate": "Calculate",
+    "result": "Result",
+    "example": "Example",
+    "formula": "Formula"
+  },
+  "footer": {
+    "contactUs": "Contact Us",
+    "allRightsReserved": "All rights reserved",
+    "investmentWarning": "The calculation results provided by this site are for reference only. Investment involves risks, please make decisions carefully."
+  },
+  "metadata": {
+    "home": {
+      "title": "Financial Tools Hub | Master Financial Knowledge, Make Rational Investment Decisions",
+      "description": "Professional financial tools platform offering present value, future value, IRR calculators and other practical tools. Learn financial concepts to make wise investment decisions.",
+      "keywords": "financial calculators,present value,future value,IRR calculation,ROI,financial knowledge,investment tools,loan calculator,opportunity cost",
+      "og": {
+        "title": "Financial Tools Hub | Professional Financial Knowledge Platform",
+        "description": "Master financial knowledge, make rational investment decisions. Professional financial tools and in-depth knowledge.",
+        "type": "website"
+      }
+    },
+    "tools": {
+      "title": "Financial Calculators | Financial Tools Hub",
+      "description": "Professional financial calculator collection including present value, future value, IRR, and investment breakeven calculators.",
+      "keywords": "financial calculators,present value calculator,future value calculator,IRR calculator,breakeven calculator"
+    },
+    "knowledge": {
+      "title": "Financial Knowledge | Financial Tools Hub",
+      "description": "Financial knowledge system helping you understand investment basics, risk analysis, asset allocation and other financial theories and practices.",
+      "keywords": "financial knowledge,investment basics,risk analysis,asset allocation,financial literacy"
+    },
+    "cases": {
+      "title": "Financial Case Studies | Financial Tools Hub",
+      "description": "Real financial investment case studies with detailed analysis of investment decisions, risk management, and return assessment.",
+      "keywords": "financial cases,investment analysis,risk management,return assessment,case studies"
+    }
+  },
+  "cases": {
+    "description": "Understand financial concepts through real-world case studies and practical applications",
+    "scenarioComparison": "Scenario Comparison",
+    "cashFlows": "Cash Flows",
+    "initialInvestment": "Initial Investment",
+    "year": "Year {year}",
+    "advantages": "Advantages",
+    "disadvantages": "Disadvantages",
+    "calculationMethod": "Calculation Method",
+    "formula": "Formula",
+    "assumptions": "Assumptions",
+    "conclusion": "Conclusion",
+    "keyInsights": "Key Insights",
+    "practicalApplication": "Practical Application",
+    "categories": {
+      "investment": "Investment Decision",
+      "presentValue": "Present Value Analysis",
+      "opportunityCost": "Opportunity Cost",
+      "investmentRisk": "Investment Risk",
+      "loanRisk": "Loan Risk"
+    },
+    "difficulty": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "rideshare": {
+      "title": "Rideshare Investment Comparison",
+      "description": "With the same investment of 500,000 yuan, which of the three different cash flow arrangements is better? In-depth analysis of the practical application of IRR calculation.",
+      "scenario1": {
+        "name": "Plan 1: Stable Income",
+        "cf1": "Year 1 Net Income",
+        "cf2": "Year 2 Net Income",
+        "cf3": "Year 3 Net Income",
+        "cf4": "Year 4 Net Income",
+        "cf5": "Year 5 Net Income 100k + Car Sale 90k",
+        "analysis": "Stable income, lower risk, but relatively low IRR. Suitable for conservative investors."
+      },
+      "scenario2": {
+        "name": "Plan 2: Early High Income",
+        "cf1": "Year 1 Net Income",
+        "cf2": "Year 2 Net Income",
+        "cf3": "Year 3 Net Income",
+        "cf4": "Year 4 Net Income",
+        "cf5": "Year 5 Net Income 0k + Car Sale 90k",
+        "analysis": "Early high income leverages the time value of money, highest IRR. The optimal choice."
+      },
+      "scenario3": {
+        "name": "Plan 3: Ultra-Early High Income",
+        "cf1": "Year 1 Net Income",
+        "cf2": "Year 2 Net Income",
+        "cf3": "Year 3 Net Income",
+        "cf4": "Year 4 Net Income",
+        "cf5": "Year 5 Net Income 0k + Car Sale 90k",
+        "analysis": "Although the total income is 20,000 less than Plan 1, the IRR is higher due to earlier cash flows."
+      },
+      "insights": {
+        "1": "The timing of cash flows is more important than the total amount",
+        "2": "Early recovered funds can be reinvested, creating compound effects",
+        "3": "IRR accurately reflects the true rate of return on investment",
+        "4": "Don't just look at total returns, consider the time value of money"
+      },
+      "practicalApplication": "In actual investments, priority should be given to projects that recover cash early, even if the total return is slightly lower."
+    },
+    "lottery": {
+      "title": "Lottery Winning Strategy",
+      "description": "Win $200 million: Take $90 million immediately or $200 million over 30 years? Financial knowledge helps you make rational choices.",
+      "scenario1": {
+        "name": "Lump Sum Payment",
+        "description": "Immediately receive $90 million",
+        "advantages": {
+          "1": "Immediate access to large sum",
+          "2": "Can invest immediately for returns",
+          "3": "Avoid inflation risk",
+          "4": "Avoid policy change risk"
+        },
+        "disadvantages": {
+          "1": "Relatively smaller amount",
+          "2": "Need to manage investments yourself",
+          "3": "Bear investment risk"
+        },
+        "expectedReturn": "Assuming 6% annual return, worth about $517 million after 30 years"
+      },
+      "scenario2": {
+        "name": "Installment Payments",
+        "description": "Receive $200 million over 30 years",
+        "advantages": {
+          "1": "Larger total amount",
+          "2": "Stable annual income",
+          "3": "No investment management needed",
+          "4": "Relatively lower risk"
+        },
+        "disadvantages": {
+          "1": "Affected by inflation",
+          "2": "Cannot use large sums immediately",
+          "3": "Policy risk exists",
+          "4": "Higher opportunity cost"
+        },
+        "presentValue": "Calculated at 5% discount rate, present value about $123 million"
+      },
+      "calculation": {
+        "title": "Present Value Analysis",
+        "method": "Using present value formula to calculate the present value of installment payments",
+        "formula": "PV = Σ [PMT / (1 + r)^t]",
+        "assumptions": {
+          "1": "Annual discount rate: 5% (market benchmark rate)",
+          "2": "Installment payment: $6.67 million per year for 30 years",
+          "3": "Lump sum amount: $90 million"
+        },
+        "result": "Installment present value about $123 million > Lump sum $90 million",
+        "conclusion": "From a pure mathematical perspective, installment payments are better. But considering investment ability and risk preference, most people choose lump sum payment."
+      },
+      "insights": {
+        "1": "Present value calculation is a core tool for comparing cash flows at different times",
+        "2": "The choice of discount rate directly affects decision results",
+        "3": "Personal investment ability and risk preference are important considerations",
+        "4": "The theoretical optimal solution may not be the practical optimal choice"
+      }
+    }
+  },
+  "knowledge": {
+    "description": "Systematically learn core financial concepts and master the theoretical foundation for investment decisions",
+    "example": "Example",
+    "practicalApplications": "Practical Applications",
+    "keyInsights": "Key Insights",
+    "references": "References",
+    "categories": {
+      "basic": "Basic Concepts",
+      "core": "Core Calculations",
+      "advanced": "Advanced Analysis"
+    },
+    "difficulty": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "timeValue": {
+      "title": "Time Value of Money",
+      "description": "A dollar today is worth more than a dollar tomorrow or in the future, regardless of inflation, because today's money can earn interest.",
+      "formula": {
+        "name": "Basic Time Value Formula",
+        "variables": {
+          "fv": "Future Value",
+          "pv": "Present Value",
+          "r": "Interest Rate",
+          "n": "Number of Periods"
+        }
+      },
+      "applications": {
+        "investment": {
+          "scenario": "Investment Decision",
+          "description": "Compare cash flows at different time points to choose the optimal investment plan",
+          "example": "Choose 100,000 yuan today or 110,000 yuan in 1 year? If the market rate exceeds 10%, choosing 100,000 yuan today is better."
+        },
+        "loan": {
+          "scenario": "Loan Decision",
+          "description": "Assess the true cost of loans",
+          "example": "Whether early loan repayment is worthwhile depends on comparing the loan interest rate with the investment return rate."
+        },
+        "retirement": {
+          "scenario": "Retirement Planning",
+          "description": "Calculate the savings amount needed for retirement",
+          "example": "To have 1 million yuan in 30 years, at 6% annual return, you need to invest 174,000 yuan today."
+        }
+      },
+      "insights": {
+        "1": "Time is the most important factor in compound interest; the earlier you start investing, the better",
+        "2": "Small differences in interest rates create huge impacts over the long term",
+        "3": "Higher compounding frequency leads to greater future value, but with diminishing marginal effects",
+        "4": "Inflation erodes the actual purchasing power of future value"
+      },
+      "references": {
+        "1": "Corporate Finance - Ross, Westerfield, Jaffe",
+        "2": "Investments - Bodie, Kane, Marcus",
+        "3": "Financial Markets and Institutions - Mishkin, Eakins"
+      }
+    },
+    "presentValue": {
+      "title": "Present Value",
+      "description": "Present value is the current worth of a future sum of money, and is a core tool for investment decisions and project evaluation.",
+      "formula": {
+        "name": "Present Value Formula",
+        "variables": {
+          "pv": "Present Value",
+          "fv": "Future Value",
+          "r": "Discount Rate",
+          "n": "Number of Periods"
+        }
+      },
+      "steps": {
+        "title": "Present Value Calculation Steps",
+        "1": {
+          "title": "Determine Future Cash Flows",
+          "description": "Identify the amount and timing of future cash flows",
+          "example": "Project generates 100,000 in Year 1 and 120,000 in Year 2"
+        },
+        "2": {
+          "title": "Determine the Discount Rate",
+          "description": "Choose an appropriate discount rate (usually market rate or required return)",
+          "example": "Market benchmark rate is 5%, used as the discount rate"
+        },
+        "3": {
+          "title": "Apply the Present Value Formula",
+          "description": "Discount future cash flows to the present",
+          "example": "PV = 100,000/(1+0.05)¹ + 120,000/(1+0.05)² = 95,238 + 108,844 = 204,082 yuan"
+        },
+        "4": {
+          "title": "Interpret the Results",
+          "description": "Analyze the economic meaning of the present value",
+          "example": "Project present value is 204,000 yuan; if investment cost is below this, the project is worth investing in"
+        }
+      },
+      "applications": {
+        "bond": {
+          "scenario": "Bond Pricing",
+          "description": "Bond price equals the present value of its future cash flows",
+          "example": "A 3-year bond with face value 1,000 yuan, 5% annual interest, priced at 973.26 yuan when market rate is 6%"
+        },
+        "project": {
+          "scenario": "Project Investment Evaluation",
+          "description": "NPV method evaluates the feasibility of investment projects",
+          "example": "Project is feasible when NPV > 0; higher NPV indicates higher project value"
+        },
+        "realestate": {
+          "scenario": "Real Estate Valuation",
+          "description": "Discount future rental income to determine property value",
+          "example": "Annual rent 60,000 yuan, at 8% discount rate, property value about 750,000 yuan (perpetuity model)"
+        }
+      },
+      "insights": {
+        "1": "The choice of discount rate directly affects present value calculation results",
+        "2": "Present value is inversely proportional to future value and discount rate",
+        "3": "Present value calculation is the foundation of all investment decisions",
+        "4": "Higher risk cash flows should use higher discount rates"
+      },
+      "references": {
+        "1": "Financial Management - Brealey, Myers",
+        "2": "Investment Banking - Joshua Rosenbaum",
+        "3": "CFA Institute - Fixed Income Analysis"
+      }
+    },
+    "futureValue": {
+      "title": "Future Value",
+      "description": "Future value is the value of money at some point in the future, demonstrating the power of compound interest.",
+      "formula": {
+        "name": "Basic Future Value Formula",
+        "variables": {
+          "fv": "Future Value",
+          "pv": "Present Value",
+          "r": "Interest Rate",
+          "n": "Number of Periods"
+        }
+      },
+      "applications": {
+        "retirement": {
+          "scenario": "Retirement Planning",
+          "description": "Calculate the value of regular savings at retirement",
+          "example": "Monthly savings of 2,000 yuan, 8% annual return, worth about 2.72 million yuan after 30 years"
+        },
+        "education": {
+          "scenario": "Education Fund Planning",
+          "description": "Reserve funds in advance for children's education",
+          "example": "Investing 100,000 yuan at a child's birth, at 6% annual return, worth about 285,000 yuan after 18 years"
+        },
+        "investment": {
+          "scenario": "Investment Return Projection",
+          "description": "Predict the future value of an investment portfolio",
+          "example": "Stock portfolio with 10% annual return, 1 million yuan will grow to 1.61 million yuan in 5 years"
+        }
+      },
+      "insights": {
+        "1": "Time is the most important factor in compound interest; the earlier you start investing, the better",
+        "2": "Small differences in interest rates create huge impacts over the long term",
+        "3": "Higher compounding frequency leads to greater future value, but with diminishing marginal effects",
+        "4": "Inflation erodes the actual purchasing power of future value"
+      },
+      "references": {
+        "1": "The Intelligent Investor - Benjamin Graham",
+        "2": "A Random Walk Down Wall Street - Burton Malkiel",
+        "3": "The Power of Compound Interest - Albert Einstein"
+      }
+    },
+    "irr": {
+      "title": "Internal Rate of Return (IRR)",
+      "description": "IRR is the discount rate that makes the net present value of an investment project zero, fully considering the timing of cash inflows and outflows.",
+      "formula": {
+        "name": "IRR Definition Formula",
+        "variables": {
+          "cft": "Cash Flow in Period t",
+          "irr": "Internal Rate of Return",
+          "c0": "Initial Investment",
+          "t": "Time Period"
+        }
+      },
+      "applications": {
+        "project": {
+          "scenario": "Project Investment Decision",
+          "description": "Evaluate the investment value of a single project",
+          "example": "Project IRR 15%, company cost of capital 12%, project is worth investing in"
+        },
+        "mutuallyExclusive": {
+          "scenario": "Mutually Exclusive Project Selection",
+          "description": "Choose the optimal plan among multiple projects",
+          "example": "Cannot simply compare IRR sizes, need to consider project scale"
+        },
+        "bond": {
+          "scenario": "Bond Yield to Maturity",
+          "description": "A bond's IRR is its yield to maturity",
+          "example": "Compare investment value of different bonds"
+        }
+      },
+      "insights": {
+        "1": "IRR considers the time value of cash flows",
+        "2": "Project is feasible when IRR > cost of capital",
+        "3": "Multiple IRR solutions or no IRR solution can exist",
+        "4": "Should combine with NPV analysis for final decision"
+      },
+      "references": {
+        "1": "Corporate Finance - Brealey, Myers, Allen",
+        "2": "Investment Project Evaluation - Damodaran",
+        "3": "CFA Institute - Corporate Finance"
+      }
+    },
+    "discountRate": {
+      "title": "Discount Rate and Opportunity Cost",
+      "description": "The discount rate is the interest rate used to convert future cash flows to present value, essentially reflecting the opportunity cost of capital.",
+      "formula": {
+        "name": "Discount Rate Composition",
+        "variables": {
+          "riskFree": "Return on risk-free investments such as government bonds",
+          "riskPremium": "Compensation required for taking additional risk"
+        }
+      },
+      "applications": {
+        "realestate": {
+          "scenario": "Real Estate Investment",
+          "description": "Evaluate the reasonableness of property investment",
+          "example": "Annual rent 60,000 yuan, expected growth 3%, at 8% discount rate, property value about 750,000 yuan"
+        },
+        "acquisition": {
+          "scenario": "Corporate Acquisition",
+          "description": "Evaluate the reasonable value of target companies",
+          "example": "Use DCF valuation method to discount future cash flows"
+        },
+        "project": {
+          "scenario": "Project Investment Decision",
+          "description": "Compare investment value of different projects",
+          "example": "Calculate NPV of each project using a unified discount rate"
+        }
+      },
+      "insights": {
+        "1": "Discount rate reflects the opportunity cost of capital",
+        "2": "Higher risk requires higher discount rate",
+        "3": "The choice of discount rate directly affects investment decisions",
+        "4": "Should choose appropriate discount rate based on project risk level"
+      },
+      "references": {
+        "1": "Investments - Bodie, Kane, Marcus",
+        "2": "Corporate Finance - Ross, Westerfield, Jaffe",
+        "3": "Valuation: Measuring and Managing the Value of Companies - Damodaran"
+      }
     }
   }
+} 

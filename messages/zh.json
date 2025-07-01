@@ -1,6 +1,428 @@
 {
-    "HomePage": {
-      "title": "你好，世界！",
-      "about": "去关于页面"
+ "navigation": {
+    "home": "首页",
+    "tools": "计算工具",
+    "knowledge": "知识库",
+    "cases": "案例分析"
+  },
+  "hero": {
+    "title": "掌握金融知识",
+    "subtitle": "理性投资决策",
+    "description": "在青年失业率高企、学历贬值的时代，金融知识成为必备技能。从买房理财到创业投资，让数据指导您的每一个决策。",
+    "startUsingTools": "开始使用工具",
+    "learnFinance": "学习金融知识"
+  },
+  "tools": {
+    "professionalTools": "专业计算工具",
+    "toolsDescription": "基于严谨的金融理论，为您提供准确可靠的计算结果",
+    "realCaseAnalysis": "实战案例分析",
+    "systematicKnowledge": "系统知识体系",
+    "presentValueCalculator": "现值计算器",
+    "futureValueCalculator": "未来价值计算器",
+    "irrCalculator": "IRR计算器",
+    "loanCalculator": "贷款利率计算器",
+    "breakevenCalculator": "投资回本计算器",
+    "opportunityCostCalculator": "机会成本计算器" 
+  },
+  "common": {
+    "calculate": "计算",
+    "result": "结果",
+    "example": "示例",
+    "formula": "公式"
+  },
+  "footer": {
+    "contactUs": "联系我们",
+    "allRightsReserved": "版权所有",
+    "investmentWarning": "本站提供的计算结果仅供参考，投资有风险，请谨慎决策。"
+  },
+  "metadata": {
+    "home": {
+      "title": "金融计算工具站 | Financial Tools Hub - 掌握金融知识，理性投资决策",
+      "description": "专业的金融计算工具平台，提供现值、未来价值、IRR计算器等实用工具。深入浅出讲解金融概念，助您做出明智的投资决策。",
+      "keywords": "金融计算器,现值计算,未来价值,IRR计算,投资回报率,金融知识,理财工具,贷款计算,机会成本",
+      "og": {
+        "title": "金融计算工具站 | 专业金融知识平台",
+        "description": "掌握金融知识，理性投资决策。提供专业的金融计算工具和深度知识解析。",
+        "type": "website"
+      }
+    },
+    "tools": {
+      "title": "金融计算工具 | 金融计算工具站",
+      "description": "专业的金融计算工具集合，包括现值计算器、未来价值计算器、IRR计算器、投资回本计算器等。",
+      "keywords": "金融计算器,现值计算器,未来价值计算器,IRR计算器,投资回本计算器"
+    },
+    "knowledge": {
+      "title": "金融知识库 | 金融计算工具站",
+      "description": "金融知识体系，助您了解投资基础知识、风险分析、资产配置等金融理论和实践。",
+      "keywords": "金融知识,投资基础,风险分析,资产配置,理财知识"
+    },
+    "cases": {
+      "title": "金融案例分析 | 金融计算工具站",
+      "description": "真实金融投资案例分析，深入解析投资决策、风险管理和收益评估过程。",
+      "keywords": "金融案例,投资分析,风险管理,收益评估,实战案例"
+    }
+  },
+  "cases": {
+    "description": "通过真实案例，深入理解金融知识在实际决策中的应用",
+    "scenarioComparison": "方案对比分析",
+    "cashFlows": "现金流",
+    "initialInvestment": "初始投资",
+    "year": "第{year}年",
+    "advantages": "优势",
+    "disadvantages": "劣势",
+    "calculationMethod": "计算方法",
+    "formula": "公式",
+    "assumptions": "假设条件",
+    "conclusion": "结论",
+    "keyInsights": "关键洞察",
+    "practicalApplication": "实际应用",
+    "categories": {
+      "investment": "投资决策",
+      "presentValue": "现值分析",
+      "opportunityCost": "机会成本",
+      "investmentRisk": "投资风险",
+      "loanRisk": "贷款风险"
+    },
+    "difficulty": {
+      "beginner": "初级",
+      "intermediate": "中级",
+      "advanced": "高级"
+    },
+    "rideshare": {
+      "title": "网约车投资方案对比",
+      "description": "同样投入50万元，三种不同的现金流安排，哪种方案更优？深入分析IRR计算的实际应用。",
+      "scenario1": {
+        "name": "方案一：稳定收入型",
+        "cf1": "第1年净收入",
+        "cf2": "第2年净收入",
+        "cf3": "第3年净收入",
+        "cf4": "第4年净收入",
+        "cf5": "第5年净收入10万+卖车9万",
+        "analysis": "收入稳定，风险较低，但IRR相对较低。适合保守型投资者。"
+      },
+      "scenario2": {
+        "name": "方案二：前期高收入型",
+        "cf1": "第1年净收入",
+        "cf2": "第2年净收入",
+        "cf3": "第3年净收入",
+        "cf4": "第4年净收入",
+        "cf5": "第5年净收入0万+卖车9万",
+        "analysis": "早期高收入发挥了金钱的时间价值，IRR最高。最优选择。"
+      },
+      "scenario3": {
+        "name": "方案三：超前期高收入型",
+        "cf1": "第1年净收入",
+        "cf2": "第2年净收入",
+        "cf3": "第3年净收入",
+        "cf4": "第4年净收入",
+        "cf5": "第5年净收入0万+卖车9万",
+        "analysis": "虽然总收入比方案一少2万，但由于早期现金流更多，IRR反而更高。"
+      },
+      "insights": {
+        "1": "现金流的时间分布比总金额更重要",
+        "2": "早期收回的资金可以再投资，发挥复利效应",
+        "3": "IRR能够准确反映投资的真实回报率",
+        "4": "不能仅看总收益，要考虑资金的时间价值"
+      },
+      "practicalApplication": "在实际投资中，应优先选择能够早期回收现金的项目，即使总收益略低。"
+    },
+    "lottery": {
+      "title": "彩票中奖选择策略",
+      "description": "中奖2亿美元：立即领取9000万还是30年分期领取2亿？金融知识帮你做出理性选择。",
+      "scenario1": {
+        "name": "一次性领取",
+        "description": "立即获得9000万美元",
+        "advantages": {
+          "1": "立即获得大笔资金",
+          "2": "可以立即投资获得收益",
+          "3": "避免通胀风险",
+          "4": "避免政策变化风险"
+        },
+        "disadvantages": {
+          "1": "金额相对较少",
+          "2": "需要自己管理投资",
+          "3": "承担投资风险"
+        },
+        "expectedReturn": "假设年化收益6%，30年后价值约5.17亿美元"
+      },
+      "scenario2": {
+        "name": "分期领取",
+        "description": "30年总共领取2亿美元",
+        "advantages": {
+          "1": "总金额更大",
+          "2": "每年稳定收入",
+          "3": "无需投资管理",
+          "4": "风险相对较低"
+        },
+        "disadvantages": {
+          "1": "受通胀影响",
+          "2": "无法立即使用大笔资金",
+          "3": "存在政策风险",
+          "4": "机会成本较高"
+        },
+        "presentValue": "按5%贴现率计算，现值约1.23亿美元"
+      },
+      "calculation": {
+        "title": "现值计算分析",
+        "method": "使用现值公式计算分期付款的现值",
+        "formula": "PV = Σ [PMT / (1 + r)^t]",
+        "assumptions": {
+          "1": "年贴现率：5%（市场基准利率）",
+          "2": "分期付款：每年666.67万美元，共30年",
+          "3": "一次性金额：9000万美元"
+        },
+        "result": "分期付款现值约1.23亿美元 > 一次性9000万美元",
+        "conclusion": "从纯数学角度，分期付款更优。但考虑投资能力和风险偏好，多数人选择一次性领取。"
+      },
+      "insights": {
+        "1": "现值计算是比较不同时间现金流的核心工具",
+        "2": "贴现率的选择直接影响决策结果",
+        "3": "个人投资能力和风险偏好是重要考虑因素",
+        "4": "理论最优解不一定是实际最优选择"
+      }
+    }
+  },
+  "knowledge": {
+    "description": "系统学习金融核心概念，掌握投资决策的理论基础",
+    "example": "示例",
+    "practicalApplications": "实际应用",
+    "keyInsights": "关键洞察",
+    "references": "参考文献",
+    "categories": {
+      "basic": "基础概念",
+      "core": "核心计算",
+      "advanced": "高级分析"
+    },
+    "difficulty": {
+      "beginner": "初级",
+      "intermediate": "中级",
+      "advanced": "高级"
+    },
+    "timeValue": {
+      "title": "金钱的时间价值",
+      "description": "今天的1块钱比明天或未来的1块钱更有价值，这与通货膨胀无关，而是因为今天的钱可以赚取利息。",
+      "formula": {
+        "name": "时间价值基本公式",
+        "variables": {
+          "fv": "未来价值 (Future Value)",
+          "pv": "现值 (Present Value)",
+          "r": "利率 (Interest Rate)",
+          "n": "时间期数 (Number of Periods)"
+        }
+      },
+      "applications": {
+        "investment": {
+          "scenario": "投资决策",
+          "description": "比较不同时间点的现金流，选择最优投资方案",
+          "example": "选择今天10万元还是1年后11万元？如果市场利率超过10%，选择今天的10万元更优。"
+        },
+        "loan": {
+          "scenario": "贷款决策",
+          "description": "评估贷款的真实成本",
+          "example": "提前还贷是否划算，取决于贷款利率与投资收益率的比较。"
+        },
+        "retirement": {
+          "scenario": "退休规划",
+          "description": "计算退休所需的储蓄金额",
+          "example": "要在30年后获得100万元，按6%年化收益，今天需要投资17.4万元。"
+        }
+      },
+      "insights": {
+        "1": "时间是复利最重要的因素，越早开始投资越有利",
+        "2": "利率的微小差异在长期会产生巨大影响",
+        "3": "复利频率越高，未来价值越大，但边际效应递减",
+        "4": "通胀会侵蚀未来价值的实际购买力"
+      },
+      "references": {
+        "1": "《公司理财》- 罗斯、韦斯特菲尔德、杰富",
+        "2": "《投资学》- 博迪、凯恩、马库斯",
+        "3": "《金融市场与机构》- 米什金、埃金斯"
+      }
+    },
+    "presentValue": {
+      "title": "现值 (Present Value)",
+      "description": "现值是未来某笔钱在今天的价值，是投资决策和项目评估的核心工具。",
+      "formula": {
+        "name": "现值计算公式",
+        "variables": {
+          "pv": "现值",
+          "fv": "未来价值",
+          "r": "贴现率",
+          "n": "时间期数"
+        }
+      },
+      "steps": {
+        "title": "现值计算步骤",
+        "1": {
+          "title": "确定未来现金流",
+          "description": "明确未来各期的现金流金额和时间",
+          "example": "项目在第1年产生10万元，第2年产生12万元现金流"
+        },
+        "2": {
+          "title": "确定贴现率",
+          "description": "选择合适的贴现率（通常为市场利率或要求回报率）",
+          "example": "市场基准利率为5%，作为贴现率"
+        },
+        "3": {
+          "title": "应用现值公式",
+          "description": "将未来现金流折现到现在",
+          "example": "PV = 100000/(1+0.05)¹ + 120000/(1+0.05)² = 95238 + 108844 = 204082元"
+        },
+        "4": {
+          "title": "解释结果",
+          "description": "分析现值的经济含义",
+          "example": "项目现值20.4万元，如果投资成本低于此值，项目值得投资"
+        }
+      },
+      "applications": {
+        "bond": {
+          "scenario": "债券定价",
+          "description": "债券价格等于其未来现金流的现值",
+          "example": "面值1000元，年利率5%，3年期债券，市场利率6%时的价格为973.26元"
+        },
+        "project": {
+          "scenario": "项目投资评估",
+          "description": "NPV法评估投资项目的可行性",
+          "example": "NPV > 0时项目可行，NPV越大项目价值越高"
+        },
+        "realestate": {
+          "scenario": "房地产估值",
+          "description": "将未来租金收入折现得到房产价值",
+          "example": "年租金6万元，按8%折现率，房产价值约75万元（永续年金模型）"
+        }
+      },
+      "insights": {
+        "1": "贴现率的选择直接影响现值计算结果",
+        "2": "现值与未来价值成反比，与贴现率成反比",
+        "3": "现值计算是所有投资决策的基础",
+        "4": "风险越高的现金流，应使用越高的贴现率"
+      },
+      "references": {
+        "1": "《财务管理》- 布雷利、迈尔斯",
+        "2": "《投资银行学》- 约书亚·罗森鲍姆",
+        "3": "CFA Institute - Fixed Income Analysis"
+      }
+    },
+    "futureValue": {
+      "title": "未来价值 (Future Value)",
+      "description": "未来价值是今天的金钱在未来某个时间点的价值，体现了复利的威力。",
+      "formula": {
+        "name": "未来价值基本公式",
+        "variables": {
+          "fv": "未来价值",
+          "pv": "现值",
+          "r": "利率",
+          "n": "时间期数"
+        }
+      },
+      "applications": {
+        "retirement": {
+          "scenario": "退休规划",
+          "description": "计算定期储蓄在退休时的价值",
+          "example": "每月储蓄2000元，年化收益8%，30年后价值约272万元"
+        },
+        "education": {
+          "scenario": "教育基金规划",
+          "description": "为子女教育提前储备资金",
+          "example": "孩子出生时投资10万元，按6%年化收益，18年后价值约28.5万元"
+        },
+        "investment": {
+          "scenario": "投资收益预测",
+          "description": "预测投资组合的未来价值",
+          "example": "股票投资组合年化收益10%，5年后100万元将增长至161万元"
+        }
+      },
+      "insights": {
+        "1": "时间是复利最重要的因素，越早开始投资越有利",
+        "2": "利率的微小差异在长期会产生巨大影响",
+        "3": "复利频率越高，未来价值越大，但边际效应递减",
+        "4": "通胀会侵蚀未来价值的实际购买力"
+      },
+      "references": {
+        "1": "《聪明的投资者》- 本杰明·格雷厄姆",
+        "2": "《漫步华尔街》- 伯顿·马尔基尔",
+        "3": "《复利的力量》- 阿尔伯特·爱因斯坦"
+      }
+    },
+    "irr": {
+      "title": "内含回报率 (IRR)",
+      "description": "IRR是使投资项目净现值为零的贴现率，充分考虑了现金流入和流出的时间节点。",
+      "formula": {
+        "name": "IRR定义公式",
+        "variables": {
+          "cft": "第t期现金流",
+          "irr": "内含回报率",
+          "c0": "初始投资",
+          "t": "时间期数"
+        }
+      },
+      "applications": {
+        "project": {
+          "scenario": "项目投资决策",
+          "description": "评估单个项目的投资价值",
+          "example": "项目IRR 15%，公司资本成本12%，项目值得投资"
+        },
+        "mutuallyExclusive": {
+          "scenario": "互斥项目选择",
+          "description": "在多个项目中选择最优方案",
+          "example": "不能简单比较IRR大小，需考虑项目规模"
+        },
+        "bond": {
+          "scenario": "债券到期收益率",
+          "description": "债券的IRR即为到期收益率",
+          "example": "比较不同债券的投资价值"
+        }
+      },
+      "insights": {
+        "1": "IRR考虑了现金流的时间价值",
+        "2": "IRR > 资本成本时项目可行",
+        "3": "存在多重IRR和无IRR解的情况",
+        "4": "应结合NPV分析做出最终决策"
+      },
+      "references": {
+        "1": "《公司财务》- 布雷利、迈尔斯、艾伦",
+        "2": "《投资项目评估》- 达莫达兰",
+        "3": "CFA Institute - Corporate Finance"
+      }
+    },
+    "discountRate": {
+      "title": "贴现率与机会成本",
+      "description": "贴现率是将未来现金流转换为现值的利率，本质上反映了资金的机会成本。",
+      "formula": {
+        "name": "贴现率的构成",
+        "variables": {
+          "riskFree": "国债收益率等无风险投资的回报",
+          "riskPremium": "承担额外风险要求的补偿"
+        }
+      },
+      "applications": {
+        "realestate": {
+          "scenario": "房地产投资",
+          "description": "评估房产投资的合理性",
+          "example": "年租金6万，预期增长3%，按8%贴现率，房产价值约75万元"
+        },
+        "acquisition": {
+          "scenario": "企业并购",
+          "description": "评估目标企业的合理价值",
+          "example": "使用DCF估值法，将未来现金流折现"
+        },
+        "project": {
+          "scenario": "项目投资决策",
+          "description": "比较不同项目的投资价值",
+          "example": "使用统一的贴现率计算各项目NPV"
+        }
+      },
+      "insights": {
+        "1": "贴现率反映了资金的机会成本",
+        "2": "风险越高，要求的贴现率越高",
+        "3": "贴现率的选择直接影响投资决策",
+        "4": "应根据项目风险水平选择合适的贴现率"
+      },
+      "references": {
+        "1": "《投资学》- 博迪、凯恩、马库斯",
+        "2": "《公司理财》- 罗斯、韦斯特菲尔德、杰富",
+        "3": "《估值：难点、解决方案及相关案例》- 达莫达兰"
+      }
     }
   }
+} 
