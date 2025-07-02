@@ -684,9 +684,9 @@
     "results": {
       "title": "計算結果",
       "actualRate": "実質年率 (APR): {rate}%",
-      "monthlyPayment": "毎月の返済額: {currency}{payment}",
-      "totalPayment": "総返済額: {currency}{payment}",
-      "totalInterest": "総利息: {currency}{interest}",
+      "monthlyPayment": "毎月の返済額: {payment} {currency}",
+      "totalPayment": "総返済額: {payment} {currency}",
+      "totalInterest": "総利息: {interest} {currency}",
       "rateMultiplierWarning": "⚠️ 実質年率は名目年率の {multiplier} 倍です！"
     },
     "infoCard": {

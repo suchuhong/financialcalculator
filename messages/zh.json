@@ -684,9 +684,9 @@
     "results": {
       "title": "计算结果",
       "actualRate": "实际年化利率: {rate}%",
-      "monthlyPayment": "月供: {currency}{payment}",
-      "totalPayment": "总还款: {currency}{payment}",
-      "totalInterest": "总利息: {currency}{interest}",
+      "monthlyPayment": "月供: {payment} {currency}",
+      "totalPayment": "总还款: {payment} {currency}",
+      "totalInterest": "总利息: {interest} {currency}",
       "rateMultiplierWarning": "⚠️ 实际利率是名义利率的 {multiplier} 倍"
     },
     "infoCard": {
